@@ -1,0 +1,397 @@
+/* RESET & GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0b021a;
+    color: #ffffff;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ESTILOS DE BOTONES */
+.btn-primary {
+    background: transparent;
+    border: 1px solid #ff007f;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.btn-pink {
+    background-color: #e6007e;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-pink-sm {
+    background-color: #e6007e;
+    border: none;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    width: 100%;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #0b021a;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.logo span {
+    color: #a100ff;
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar nav ul li a {
+    font-size: 0.9rem;
+    color: #ccc;
+    transition: 0.3s;
+}
+
+.navbar nav ul li a:hover {
+    color: #fff;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 8%;
+    gap: 20px;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.sub-heading {
+    color: #a100ff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero-content h1 {
+    font-size: 2.2rem;
+    margin: 10px 0;
+}
+
+.hero-content p {
+    color: #aaa;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+}
+
+/* PLATAFORMAS */
+.platform-filter {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.platform-btn {
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.platform-btn.pc { background-color: #1a103c; }
+.platform-btn.xbox { background-color: #107c41; }
+.platform-btn.ps { background-color: #00439c; }
+.platform-btn.nintendo { background-color: #e60012; }
+
+/* SECCIONES COMUNES */
+.section-container {
+    padding: 40px 8%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+.section-title.left, .sub-text.left {
+    text-align: left;
+}
+
+.section-title span, h2 span {
+    color: #a100ff;
+}
+
+.sub-text {
+    color: #aaa;
+    font-size: 0.85rem;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+/* JUEGOS POPULARES GRID */
+.grid-games {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.game-card {
+    background-color: #15092b;
+    border: 1px solid #28114b;
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+}
+
+.game-card img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.game-card h3 {
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+}
+
+.game-card .price {
+    color: #a100ff;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+}
+
+/* CARACTERÍSTICAS / POR QUÉ ELEGIR */
+.grid-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.feature-card {
+    background-color: #15092b;
+    border: 1px solid #2b1754;
+    padding: 20px 15px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.feature-card .icon {
+    font-size: 1.5rem;
+    color: #a100ff;
+    margin-bottom: 10px;
+}
+
+.feature-card h4 {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.feature-card p {
+    font-size: 0.75rem;
+    color: #aaa;
+}
+
+/* OFERTAS ESPECIALES */
+.grid-offers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.offer-card {
+    background-color: #15092b;
+    border: 1px solid #28114b;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.offer-card img {
+    width: 80px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.offer-details {
+    text-align: left;
+    width: 100%;
+}
+
+.offer-details h3 {
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #777;
+    font-size: 0.75rem;
+}
+
+.new-price {
+    color: #e6007e;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #444;
+    border-radius: 50%;
+}
+
+.dot.active {
+    background-color: #a100ff;
+}
+
+/* NEWSLETTER */
+.newsletter-section {
+    background-color: #110524;
+    margin: 40px 8%;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #230d47;
+}
+
+.newsletter-section h3 {
+    margin-bottom: 15px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.newsletter-form input {
+    background-color: #000;
+    border: 1px solid #333;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: white;
+    width: 100%;
+    outline: none;
+}
+
+/* FOOTER */
+footer {
+    background-color: #06010f;
+    padding: 40px 8% 20px 8%;
+    border-top: 1px solid #1a0b36;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+}
+
+.footer-col p {
+    color: #aaa;
+    font-size: 0.8rem;
+    margin: 15px 0;
+    line-height: 1.4;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 0.9rem;
+}
+
+.footer-col h4 {
+    color: #a100ff;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+    color: #aaa;
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #fff;
+}
