@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos Destacados - YourGamesWorld</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-text">YourGames<span class="highlight">World</span></span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="juegos.html" class="active">Juegos</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <div class="search-box">
+                <input type="text" placeholder="BUSCAR">
+                <button aria-label="Buscar">🔍</button>
+            </div>
+            <button class="icon-btn" aria-label="Carrito">🛒</button>
+            <button class="icon-btn" aria-label="Notificaciones">🔔</button>
+            <button class="icon-btn user-avatar" aria-label="Perfil"></button>
+        </div>
+    </header>
+
+    <main class="games-page-container">
+        <section class="catalog-header">
+            <h1 class="main-title">Juegos destacados</h1>
+            <p class="subtitle">Encuentra tu próximo juego favorito</p>
+        </section>
+
+        <div class="category-pills">
+            <button class="pill-btn active">Acción</button>
+            <button class="pill-btn">Aventura</button>
+            <button class="pill-btn">Deportes</button>
+            <button class="pill-btn">Terror</button>
+            <button class="pill-btn">Carreras</button>
+            <button class="pill-btn">RPG</button>
+            <button class="pill-btn">Estrategia</button>
+            <button class="pill-btn">Simulación</button>
+        </div>
+
+        <div class="catalog-layout">
+            
+            <aside class="sidebar">
+                <div class="filter-header">
+                    <h3 class="filter-title">Filtros</h3>
+                    <a href="#" class="clear-filters">Limpiar todo</a>
+                </div>
+
+                <div class="filter-group">
+                    <span class="filter-group-title">Plataforma</span>
+                    <label class="checkbox-label"><input type="checkbox"> PC</label>
+                    <label class="checkbox-label"><input type="checkbox"> Playstation</label>
+                    <label class="checkbox-label"><input type="checkbox" checked> Xbox</label>
+                    <label class="checkbox-label"><input type="checkbox"> Nintendo</label>
+                </div>
+
+                <div class="filter-group price-range">
+                    <span class="filter-group-title">Rango de precio</span>
+                    <input type="range" min="0" max="100" value="50">
+                    <div class="price-values">
+                        <span>$0</span>
+                        <span>$100+</span>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <label class="checkbox-label"><input type="checkbox"> 10% o más</label>
+                    <label class="checkbox-label"><input type="checkbox"> 25% o más</label>
+                    <label class="checkbox-label"><input type="checkbox"> 50% o más</label>
+                    <label class="checkbox-label"><input type="checkbox"> En oferta</label>
+                </div>
+
+                <div class="filter-group">
+                    <span class="filter-group-title">Orden por</span>
+                    <select class="select-input">
+                        <option>Más populares</option>
+                        <option>Menor precio</option>
+                        <option>Mayor precio</option>
+                    </select>
+                </div>
+
+                <div class="help-card">
+                    <h4>¿No encuentras lo que buscas?</h4>
+                    <p>Explora nuestras categorías</p>
+                    <button class="btn-pink-sm">Ver todas las categoría</button>
+                </div>
+            </aside>
+
+            <section class="games-grid">
+                
+                <div class="game-card">
+                    <img src="nba2k26.jpg" alt="NBA 2K26">
+                    <div class="game-info">
+                        <h3 class="game-title">NBA 2K26</h3>
+                        <span class="game-price">$67.89</span>
+                        <div class="card-footer-actions">
+                            <button class="icon-btn">🛒</button>
+                            <button class="icon-btn">🤍</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card highlighted-card">
+                    <img src="halo5.jpg" alt="Halo 5 Guardians">
+                    <div class="game-info">
+                        <h3 class="game-title">Halo 5: Guardians – Xbox One</h3>
+                        <span class="game-price">$40.99</span>
+                        <div class="card-footer-actions">
+                            <button class="icon-btn">🛒</button>
+                            <button class="icon-btn">🤍</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="rdr2.jpg" alt="Red Dead Redemption 2">
+                    <div class="game-info">
+                        <h3 class="game-title">Red Dead Redemption 2</h3>
+                        <span class="game-price">$60.00</span>
+                        <div class="card-footer-actions">
+                            <button class="icon-btn">🛒</button>
+                            <button class="icon-btn">🤍</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="gtav.jpg" alt="Grand Theft Auto V">
+                    <div class="game-info">
+                        <h3 class="game-title">Grand Theft Auto V</h3>
+                        <span class="game-price">$33.99</span>
+                        <div class="card-footer-actions">
+                            <button class="icon-btn">🛒</button>
+                            <button class="icon-btn">🤍</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="bendy.jpg" alt="Bendy and the Ink Machine">
+                    <div class="game-info">
+                        <h3 class="game-title">Bendy and the Ink Machine</h3>
+                        <span class="game-price">$24.99</span>
+                        <div class="card-footer-actions">
+                            <button class="icon-btn">🛒</button>
+                            <button class="icon-btn">🤍</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="crash.jpg" alt="Crash Bandicoot">
+                    <div class="game-info">
+                        <h3 class="game-title">Crash Bandicoot N.Sane Trilogy</h3>
+                        <span class="game-price">$69.99</span>
+                        <div class="card-footer-actions">
+                            <button class="icon-btn">🛒</button>
+                            <button class="icon-btn">🤍</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="ea26.jpg" alt="EA Sports FC 26">
+                    <div class="game-info">
+                        <h3 class="game-title">EA Sports FC 26</h3>
+                        <span class="game-price">$18.59</span>
+                        <div class="card-footer-actions">
+                            <button class="icon-btn">🛒</button>
+                            <button class="icon-btn">🤍</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="battlefield6.jpg" alt="Battlefield 6">
+                    <div class="game-info">
+                        <h3 class="game-title">Battlefield 6 – Xbox Series X|S</h3>
+                        <span class="game-price">$19.99</span>
+                        <div class="card-footer-actions">
+                            <button class="icon-btn">🛒</button>
+                            <button class="icon-btn">🤍</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="acmirage.jpg" alt="Assassin's Creed Mirage">
+                    <div class="game-info">
+                        <h3 class="game-title">Assassin's Creed Mirage – Xbox One</h3>
+                        <span class="game-price">$27.50</span>
+                        <div class="card-footer-actions">
+                            <button class="icon-btn">🛒</button>
+                            <button class="icon-btn">🤍</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="lifeisstrange.jpg" alt="Life is Strange">
+                    <div class="game-info">
+                        <h3 class="game-title">Colección Life is Strange Remastered</h3>
+                        <span class="game-price">$15.99</span>
+                        <div class="card-footer-actions">
+                            <button class="icon-btn">🛒</button>
+                            <button class="icon-btn">🤍</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="minecraft.jpg" alt="Minecraft Deluxe">
+                    <div class="game-info">
+                        <h3 class="game-title">Minecraft Deluxe Collection</h3>
+                        <span class="game-price">$24.00</span>
+                        <div class="card-footer-actions">
+                            <button class="icon-btn">🛒</button>
+                            <button class="icon-btn">🤍</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="poppy5.jpg" alt="Poppy Playtime Chapter 5">
+                    <div class="game-info">
+                        <h3 class="game-title">Poppy Playtime: Chapter 5</h3>
+                        <span class="game-price">$12.99</span>
+                        <div class="card-footer-actions">
+                            <button class="icon-btn">🛒</button>
+                            <button class="icon-btn">🤍</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="silenthill.jpg" alt="Silent Hill F">
+                    <div class="game-info">
+                        <h3 class="game-title">SILENT HILL f – Xbox Series X|S</h3>
+                        <span class="game-price">$25.99</span>
+                        <div class="card-footer-actions">
+                            <button class="icon-btn">🛒</button>
+                            <button class="icon-btn">🤍</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="outerworlds2.jpg" alt="The Outer Worlds 2">
+                    <div class="game-info">
+                        <h3 class="game-title">The Outer Worlds 2</h3>
+                        <span class="game-price">$19.99</span>
+                        <div class="card-footer-actions">
+                            <button class="icon-btn">🛒</button>
+                            <button class="icon-btn">🤍</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="farcry6.jpg" alt="Far Cry 6 Deluxe">
+                    <div class="game-info">
+                        <h3 class="game-title">Far Cry 6 Deluxe Edition</h3>
+                        <span class="game-price">$18.99</span>
+                        <div class="card-footer-actions">
+                            <button class="icon-btn">🛒</button>
+                            <button class="icon-btn">🤍</button>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col main-col">
+                <div class="logo">YourGames<span>World</span></div>
+                <p>Tu tienda de confianza para el mundo gaming, disfruta de la mejor experiencia y los últimos lanzamientos de tus consolas favoritas.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-discord"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="link-column">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="juegos.html">Juegos</a></li>
+                        <li><a href="#">Novedades</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Soporte técnico</a></li>
+                    </ul>
+                </div>
+                <div class="link-column">
+                    <h3>Ayuda</h3>
+                    <ul>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="#">Política y privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>👑 © 2026 <span class="footer-logo">YourGamesWord</span>. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

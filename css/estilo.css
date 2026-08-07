@@ -1,4 +1,15 @@
-/* RESET & GENERAL */
+/* ==========================================================================
+   1. VARIABLES GLOBALES & RESET
+   ========================================================================== */
+:root {
+    --purple-light: #a100ff;
+    --pink-neon: #e6007e;
+    --text-muted: #aaa;
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-pill: 20px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +27,9 @@ a {
     text-decoration: none;
 }
 
-/* ESTILOS DE BOTONES */
+/* ==========================================================================
+   2. ESTILOS DE BOTONES
+   ========================================================================== */
 .btn-primary {
     background: transparent;
     border: 1px solid #ff007f;
@@ -28,7 +41,7 @@ a {
 }
 
 .btn-pink {
-    background-color: #e6007e;
+    background-color: var(--pink-neon);
     border: none;
     color: white;
     padding: 10px 20px;
@@ -38,7 +51,7 @@ a {
 }
 
 .btn-pink-sm {
-    background-color: #e6007e;
+    background-color: var(--pink-neon);
     border: none;
     color: white;
     padding: 6px 15px;
@@ -57,7 +70,9 @@ a {
     cursor: pointer;
 }
 
-/* NAVBAR */
+/* ==========================================================================
+   3. NAVBAR
+   ========================================================================== */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -72,7 +87,7 @@ a {
 }
 
 .logo span {
-    color: #a100ff;
+    color: var(--purple-light);
 }
 
 .navbar nav ul {
@@ -91,7 +106,9 @@ a {
     color: #fff;
 }
 
-/* HERO SECTION */
+/* ==========================================================================
+   4. HERO SECTION
+   ========================================================================== */
 .hero {
     display: flex;
     align-items: center;
@@ -105,7 +122,7 @@ a {
 }
 
 .sub-heading {
-    color: #a100ff;
+    color: var(--purple-light);
     font-size: 0.8rem;
     font-weight: bold;
     letter-spacing: 1px;
@@ -117,7 +134,7 @@ a {
 }
 
 .hero-content p {
-    color: #aaa;
+    color: var(--text-muted);
     font-size: 0.9rem;
     margin-bottom: 20px;
 }
@@ -133,7 +150,9 @@ a {
     border-radius: 12px;
 }
 
-/* PLATAFORMAS */
+/* ==========================================================================
+   5. PLATAFORMAS
+   ========================================================================== */
 .platform-filter {
     display: flex;
     justify-content: center;
@@ -155,7 +174,9 @@ a {
 .platform-btn.ps { background-color: #00439c; }
 .platform-btn.nintendo { background-color: #e60012; }
 
-/* SECCIONES COMUNES */
+/* ==========================================================================
+   6. SECCIONES COMUNES Y GRIDS
+   ========================================================================== */
 .section-container {
     padding: 40px 8%;
     text-align: center;
@@ -171,11 +192,11 @@ a {
 }
 
 .section-title span, h2 span {
-    color: #a100ff;
+    color: var(--purple-light);
 }
 
 .sub-text {
-    color: #aaa;
+    color: var(--text-muted);
     font-size: 0.85rem;
     margin-top: -20px;
     margin-bottom: 30px;
@@ -208,12 +229,12 @@ a {
 }
 
 .game-card .price {
-    color: #a100ff;
+    color: var(--purple-light);
     font-size: 0.85rem;
     margin-bottom: 10px;
 }
 
-/* CARACTERÍSTICAS / POR QUÉ ELEGIR */
+/* CARACTERÍSTICAS */
 .grid-features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -231,7 +252,7 @@ a {
 
 .feature-card .icon {
     font-size: 1.5rem;
-    color: #a100ff;
+    color: var(--purple-light);
     margin-bottom: 10px;
 }
 
@@ -242,7 +263,7 @@ a {
 
 .feature-card p {
     font-size: 0.75rem;
-    color: #aaa;
+    color: var(--text-muted);
 }
 
 /* OFERTAS ESPECIALES */
@@ -286,7 +307,7 @@ a {
 }
 
 .new-price {
-    color: #e6007e;
+    color: var(--pink-neon);
     font-weight: bold;
     font-size: 0.9rem;
     margin-bottom: 8px;
@@ -307,10 +328,12 @@ a {
 }
 
 .dot.active {
-    background-color: #a100ff;
+    background-color: var(--purple-light);
 }
 
-/* NEWSLETTER */
+/* ==========================================================================
+   7. NEWSLETTER & FOOTER
+   ========================================================================== */
 .newsletter-section {
     background-color: #110524;
     margin: 40px 8%;
@@ -342,7 +365,6 @@ a {
     outline: none;
 }
 
-/* FOOTER */
 footer {
     background-color: #06010f;
     padding: 40px 8% 20px 8%;
@@ -356,7 +378,7 @@ footer {
 }
 
 .footer-col p {
-    color: #aaa;
+    color: var(--text-muted);
     font-size: 0.8rem;
     margin: 15px 0;
     line-height: 1.4;
@@ -373,7 +395,7 @@ footer {
 }
 
 .footer-col h4 {
-    color: #a100ff;
+    color: var(--purple-light);
     font-size: 0.9rem;
     margin-bottom: 15px;
 }
@@ -387,11 +409,250 @@ footer {
 }
 
 .footer-col ul li a {
-    color: #aaa;
+    color: var(--text-muted);
     font-size: 0.8rem;
     transition: 0.3s;
 }
 
 .footer-col ul li a:hover {
     color: #fff;
+}
+
+/* ==========================================================================
+   8. PÁGINA DE JUEGOS DESTACADOS / CATÁLOGO
+   ========================================================================== */
+.games-page-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px 30px;
+}
+
+.catalog-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    color: var(--purple-light);
+    font-size: 0.9rem;
+    margin-top: -15px;
+}
+
+/* CATEGORY PILLS */
+.category-pills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.pill-btn {
+    background-color: #6b21a8;
+    color: #ffffff;
+    border: none;
+    padding: 8px 22px;
+    border-radius: var(--radius-pill);
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.pill-btn:hover, .pill-btn.active {
+    background-color: #a855f7;
+    box-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+}
+
+/* LAYOUT CON SIDEBAR Y GRID */
+.catalog-layout {
+    display: flex;
+    gap: 25px;
+}
+
+/* SIDEBAR DE FILTROS */
+.sidebar {
+    width: 220px;
+    flex-shrink: 0;
+    background-color: #110524;
+    border: 1px solid #28114b;
+    border-radius: var(--radius-md);
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: fit-content;
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #28114b;
+    padding-bottom: 10px;
+}
+
+.filter-title {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.clear-filters {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-decoration: underline;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.filter-group-title {
+    font-size: 0.8rem;
+    color: var(--purple-light);
+    font-weight: bold;
+}
+
+.checkbox-label {
+    font-size: 0.8rem;
+    color: #d1d5db;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+    accent-color: #a855f7;
+}
+
+.price-range input[type="range"] {
+    width: 100%;
+    accent-color: #a855f7;
+}
+
+.price-values {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.select-input {
+    background-color: #18092e;
+    color: #ffffff;
+    border: 1px solid #3b1566;
+    padding: 6px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    outline: none;
+}
+
+.help-card {
+    background-color: #190933;
+    border: 1px solid #3b1566;
+    border-radius: var(--radius-sm);
+    padding: 15px 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.help-card h4 {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+.help-card p {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+}
+
+/* GRILLA DE JUEGOS Y TARJETAS */
+.games-grid {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.game-card {
+    background-color: #15082a;
+    border: 1px solid #28114b;
+    border-radius: var(--radius-sm);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.game-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--pink-neon);
+}
+
+/* ESTILO DESTACADO DE TARJETA CORREGIDO */
+.highlighted-card {
+    border: 2px solid var(--purple-light);
+    box-shadow: 0 0 15px rgba(161, 0, 255, 0.6);
+}
+
+.game-card img {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.game-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #ffffff;
+    height: 32px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-bottom: 5px;
+}
+
+.game-price {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--pink-neon);
+    margin-bottom: 5px;
+}
+
+.card-footer-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+/* ==========================================================================
+   9. RESPONSIVE DESIGN
+   ========================================================================== */
+@media (max-width: 1100px) {
+    .games-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .catalog-layout {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+    }
+    
+    .games-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
